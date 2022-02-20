@@ -26,7 +26,8 @@
 
 		const dCelsius = +prompt("Введите желаемую температуру в градусах Цельсия");
 		const result = (9 / 5) * dCelsius + 32;
-		alert(`Цельсий: ${dCelsius} , Фаренгейт: ${result}`)
+		const round = Math.round(result * 100) / 100;
+		alert(`Цельсий: ${dCelsius} , Фаренгейт: ${round}`)
 	</script>
 </body>
 
